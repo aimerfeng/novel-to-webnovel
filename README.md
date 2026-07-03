@@ -2,6 +2,10 @@
 
 翻译腔小说 → 中文网文风格的 Claude Code 多阶段改写技能。
 
+> **EN** — A [Claude Code Skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) that converts translated-novel prose (Japanese light-novel translations, MTL drafts, or your own manuscripts) into natural Chinese **webnovel** style. Five-stage pipeline: deterministic format cleanup (quote marks, furigana removal) → per-project style guide generation → user-approved sample → **parallel subagent rewriting in ~25KB chunks** → QA scripts & merge checklist. Three intensity levels (light polish / webnovel voice / full localization), with curated slang whitelist/blacklist and translation-ese removal tables. Ships with 3 standalone Perl tools (`chapter_map`, `format_clean`, `qa_check`) usable outside Claude. MIT licensed.
+>
+> Install: `git clone https://github.com/aimerfeng/novel-to-webnovel.git ~/.claude/skills/novel-to-webnovel` — then just ask Claude Code to "网文化" any novel file.
+
 把日轻译稿、英文译稿、机翻稿或你自己的小说草稿，转换成自然的中文网文口感——去翻译腔、第一人称吐槽流、网感词点缀。采用「机械清理 → 风格定调 → 样例确认 → 分块并行改写 → 质量校验合并」五阶段流水线，几十万字的书也能稳定处理。
 
 ## 安装
